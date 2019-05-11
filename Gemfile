@@ -23,13 +23,20 @@ gem 'puma', '~> 3.11'
 # gem 'capistrano-rails', group: :development
 
 #User ActiveRecord Serializer to generate json api back-end
-gem 'active_model_serializers'
+gem 'active_model_serializers', '~>0.10.0'
+
+#Fetch data from OpenBrewery
+gem 'rest-client'
+gem 'json'
+
+# Use Hirb to render readable table for objects
+gem 'hirb'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

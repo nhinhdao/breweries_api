@@ -10,7 +10,6 @@ class CreatePlaces < ActiveRecord::Migration[5.2]
       t.float :latitude
       t.string :phone
       t.string :website_url
-      t.integer :location_id
       t.timestamps
     end
   end

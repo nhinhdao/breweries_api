@@ -5,3 +5,28 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'rest-client' 
+require 'json'
+
+resp = RestClient.get("https://api.openbrewerydb.org/breweries?by_state=new_york&sort=+name&per_page=50")
+response = JSON.parse(resp)
+
+response.each do |place|
+  Place.create! do |pl|
+    pl.name = place["name"]
+    pl.brewery_type = place["brewery_type"]
+    if place["street"].length > 0 && place["city"].length > 0
+      pl.address = "#{place["street"]}, #{place["city"]}, New York"
+    elsif place["street"].length == 0 && place["city"].length > 0
+      pl.address = "#{place["city"]}, New York"
+    else
+      pl.address = "New York"
+    end
+    pl.postal_code = place["postal_code"]
+    pl.country = place["country"]
+    pl.longitude = place["longitude"] ? place["longitude"].to_f : -73.935242
+    pl.latitude = place["latitude"] ? place["latitude"].to_f : 40.730610
+    pl.phone = place["phone"]
+    pl.website_url = place["website_url"]
+  end
+end
