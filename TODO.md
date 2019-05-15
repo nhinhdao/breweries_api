@@ -16,3 +16,5 @@ Back end API consists of brewery places in New York.
 4. Routes for places:
   - Index: Places.all
   - Show: Place.find(:id)
+
+5. Deploy to Heroku
