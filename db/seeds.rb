@@ -25,7 +25,7 @@ response.each do |place|
     pl.country = place["country"]
     pl.longitude = place["longitude"] ? place["longitude"].to_f : -73.935242
     pl.latitude = place["latitude"] ? place["latitude"].to_f : 40.730610
-    pl.phone = place["phone"].empty? ? place["phone"] : 'N/A'
-    pl.website_url = place["website_url"].empty? ? place["website_url"] : 'N/A'
+    pl.phone = place["phone"].empty? ? 'N/A' : place["phone"]
+    pl.website_url = place["website_url"].empty? ? 'N/A' : place["website_url"]
   end
 end
