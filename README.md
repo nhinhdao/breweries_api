@@ -1,9 +1,9 @@
-**New York Brewering Companies** is a client/server application for users to browse and search for NYC Brewering Companies. 
+**New York Brewing Companies** is a client/server application for users to browse and search for NYC Brewing Companies. 
 It was built with rails API back-end and react and redux front-end. This project was bootstrapped with Create React App and semantic-ui react to implement application's layout.
 
-This is the back end API.
+This is the back end API application.
 
-For front end, please visit: [breweries-nyc](https://github.com/nhinhdao/breweries_nyc)
+For front end, please visit: [breweries_nyc](https://github.com/nhinhdao/breweries_nyc)
 
 
 ## Installation
@@ -29,7 +29,7 @@ $ rake db:seed
 ```
 $ rails server -p 3001
 ```
--  Then check out the front-end application: [breweries-nyc](https://github.com/nhinhdao/breweries_nyc) to set up and run client side at the same time.
+-  Then check out the front-end application: [breweries_nyc](https://github.com/nhinhdao/breweries_nyc) to set up and run client side at the same time.
 
 
 ## Contributing
