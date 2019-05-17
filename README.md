@@ -3,7 +3,7 @@ It was built with rails API back-end and react and redux front-end. This project
 
 This is the back end API.
 
-For front end, please visit: [breweries-nyc](https://nycbreweries.herokuapp.com/)
+For front end, please visit: [breweries-nyc](https://github.com/nhinhdao/breweries_nyc)
 
 
 ## Installation
@@ -29,12 +29,12 @@ $ rake db:seed
 ```
 $ rails server -p 3001
 ```
--  Then check out the front-end application: [breweries-nyc](https://nycbreweries.herokuapp.com/) to set up and run client side at the same time.
+-  Then check out the front-end application: [breweries-nyc](https://github.com/nhinhdao/breweries_nyc) to set up and run client side at the same time.
 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/nhinhdao/project-management-railsAPI-backend. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/nhinhdao/breweries-api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
