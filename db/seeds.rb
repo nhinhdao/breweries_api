@@ -12,6 +12,7 @@ resp = RestClient.get("https://api.openbrewerydb.org/breweries?by_state=new_york
 response = JSON.parse(resp)
 response.each do |place|
   Place.create! do |pl|
+    pl.code = place["id"]
     pl.name = place["name"]
     pl.brewery_type = place["brewery_type"].capitalize
     if place["street"].length > 0 && place["city"].length > 0

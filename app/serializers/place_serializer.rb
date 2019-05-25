@@ -1,4 +1,4 @@
 class PlaceSerializer < ActiveModel::Serializer
-  attributes :id, :name, :brewery_type, :address, :postal_code, :country, :longitude, :latitude, :phone, :website_url
+  attributes :id, :code, :name, :brewery_type, :address, :postal_code, :country, :longitude, :latitude, :phone, :website_url
   # belongs_to :location
 end
